@@ -1,0 +1,33 @@
+body {
+  background-color: pink;
+}
+
+/* CSS goes all the way top-to-bottom!*/
+
+p {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+#important {
+  font-size: 30px;
+  color: red;
+}
+
+.circle {
+  background-color: brown;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
