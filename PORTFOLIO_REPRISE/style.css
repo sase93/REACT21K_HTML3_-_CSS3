@@ -16,10 +16,15 @@ html {
 
 body {
   background-color: #eaf0f5;
+  font-family: var(--mainfont);
 }
 
 a {
   color: var(--linkcolor);
+}
+
+h1 {
+  font-size: 36px;
 }
 
 /************ Header ************/
@@ -27,6 +32,9 @@ a {
   display: flex;
   justify-content: space-between;
   background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .logo {
@@ -37,15 +45,50 @@ a {
 
 ul {
   display: flex;
-  margin: 3vh 2vw 0vh 2vw;
+  margin: 3.5vh 2vw 0vh 2vw;
 }
 
 li {
-  font-family: var(--mainfont);
   margin: 0 2vw;
   list-style-type: none;
 }
 
 /************ Main ************/
+.hero-banner {
+  width: 100%;
+  min-height: 85vh;
+  background: url(https://source.unsplash.com/FIKD9t5_5zQ/1600x900) no-repeat
+    fixed center center/cover;
+  z-index: -1;
+}
+
+.hero-banner > h1 {
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.work-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  color: white;
+  background-color: #004576;
+  border-radius: 3%;
+  width: 22%;
+  max-height: 50vh;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 3px 7px rgb(39, 39, 39);
+}
+
+.card-picture {
+  max-height: 15vh;
+  max-width: 15vw;
+}
 
 /************ Footer ************/
+#footer {
+  text-align: center;
+}
