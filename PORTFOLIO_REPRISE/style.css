@@ -1,8 +1,8 @@
 /************ Variables and overall settings ************/
 :root {
   --mainfont: Arial, Helvetica, sans-serif;
-  --linkcolor: #da5200;
-  --linkhovercolor: #11a71d;
+  --linkcolor: #bf3103;
+  --linkhovercolor: #027a0c;
   --mainfontcolor: #003a64;
   --lightblue: #82b3d5;
   --darkblue: #004576;
@@ -83,7 +83,7 @@ ul {
 li {
   margin: 0 var(--sidemargin);
   list-style-type: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /************ Main ************/
@@ -151,11 +151,11 @@ section > p {
 }
 
 .work-card:nth-child(even) > a {
-  color: #c03802;
+  color: #bf3103;
 }
 
 .work-card:nth-child(even) > a:hover {
-  color: var(--linkhovercolor);
+  color: #066b0e;
 }
 
 .skills-cards {
@@ -205,7 +205,7 @@ input {
 #submit {
   padding: 0.5vh 0.9vw;
   background-color: var(--bgwhite);
-  color: #da5200;
+  color: #bf3103;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   font-weight: 600;
