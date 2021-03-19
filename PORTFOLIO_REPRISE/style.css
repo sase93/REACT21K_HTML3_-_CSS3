@@ -55,6 +55,7 @@ ul {
 li {
   margin: 0 var(--sidemargin);
   list-style-type: none;
+  font-size: 1.2rem;
 }
 
 /************ Main ************/
@@ -79,11 +80,11 @@ section > p {
 
 #work,
 #skills {
-  background-color: #82b3d5;
+  background-color: #eaf0f5;
 }
 
 #experience {
-  background-color: #eaf0f5;
+  background-color: #82b3d5;
 }
 
 .work-cards {
@@ -110,6 +111,32 @@ section > p {
 /************ Footer ************/
 #footer {
   text-align: center;
+  background-color: #82b3d5;
+}
+
+#footer > h2,
+#footer > p {
+  padding: var(--verticalmargin) 0;
+}
+
+input,
+textarea {
+  margin: 4px;
+  border-radius: 4%;
+  background-color: #eaf0f5;
+}
+
+input {
+  padding: 0.5vh;
+}
+
+#submit {
+  padding: 0.5vh 0.9vw;
+  background-color: #eaf0f5;
+  color: #da5200;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /************ Other devices' settings ************/
