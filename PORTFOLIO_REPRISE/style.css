@@ -147,7 +147,7 @@ input {
   }
 
   li {
-    font-size: 14px;
+    font-size: 0.7rem;
   }
 
   h1 {
@@ -155,26 +155,30 @@ input {
   }
 
   h2 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   h3 {
     font-size: 10px;
   }
 
-  .box {
+  .card {
     width: 28%;
     max-height: 50vh;
     margin: 4vw;
     padding: 1rem;
   }
 
-  .box > p,
-  .box > a {
+  .card > p,
+  .card > a {
     font-size: 10px;
   }
 
   p {
     font-size: 12px;
+  }
+
+  label {
+    font-size: 0.9rem;
   }
 }
