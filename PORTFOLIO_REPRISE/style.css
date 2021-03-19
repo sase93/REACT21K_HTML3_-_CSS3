@@ -47,6 +47,7 @@ h1 {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .logo {
@@ -73,6 +74,15 @@ li {
   background: url(https://source.unsplash.com/FIKD9t5_5zQ/1600x900) no-repeat
     fixed center center/cover;
   z-index: -1;
+}
+
+.hero-banner::before {
+  content: "";
+  background-color: rgba(15, 9, 150, 0.35);
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  top: 0;
 }
 
 .hero-banner > h1 {
