@@ -1,0 +1,51 @@
+/************ Variables and overall settings ************/
+:root {
+  --mainfont: Arial, Helvetica, sans-serif;
+  --linkcolor: #da5200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eaf0f5;
+}
+
+a {
+  color: var(--linkcolor);
+}
+
+/************ Header ************/
+.logo_and_nav {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.logo {
+  max-width: 10vw;
+  max-height: 10vh;
+  margin: 2vh 0 0 2vw;
+}
+
+ul {
+  display: flex;
+  margin: 3vh 2vw 0vh 2vw;
+}
+
+li {
+  font-family: var(--mainfont);
+  margin: 0 2vw;
+  list-style-type: none;
+}
+
+/************ Main ************/
+
+/************ Footer ************/
