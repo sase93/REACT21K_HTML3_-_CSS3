@@ -40,6 +40,25 @@ h1 {
 }
 
 /************ Header ************/
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu a.icon {
+  display: block;
+  position: absolute;
+  right: 10vw;
+  top: 2vh;
+}
+
+.mobile-menu a.icon:hover {
+  color: var(--linkhovercolor);
+}
+
+.menu-links {
+  display: none;
+}
+
 .logo_and_nav {
   display: flex;
   justify-content: space-between;
@@ -204,8 +223,12 @@ input {
     max-width: 12vw;
   }
 
-  li {
-    font-size: 0.7rem;
+  ul {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: initial;
   }
 
   h1 {

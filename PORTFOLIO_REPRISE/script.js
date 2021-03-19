@@ -11,3 +11,12 @@ const scrollHeader = () => {
 };
 
 window.addEventListener("scroll", scrollHeader);
+
+function toggleMenu() {
+    var x = document.querySelector('.menu-links');
+    if (x.style.display === "initial") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "initial";
+    }
+}
