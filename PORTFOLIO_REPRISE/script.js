@@ -1,12 +1,13 @@
 let header = document.querySelector(".logo_and_nav");
+let mobileLinks = document.querySelector(".menu-links");
 
 const scrollHeader = () => {
-    if (document.body.scrollTop > 210 || document.documentElement.scrollTop > 210) {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         header.style.background = "#eaf0f5";
-        header.style.padding = "1%";
+        mobileLinks.style.background = "#eaf0f5";
     } else {
         header.style.background = "transparent";
-        header.style.padding = "1%";
+        mobileLinks.style.background = "transparent";
     }
 };
 
