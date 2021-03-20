@@ -213,6 +213,10 @@ section > p {
   box-shadow: 2px 3px 7px rgb(39, 39, 39);
 }
 
+#progress {
+  max-width: 100%;
+}
+
 .skills-card:nth-child(odd) {
   background-color: var(--lightblue);
   color: var(--darkblue);
@@ -247,6 +251,7 @@ input {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 #submit:hover {
