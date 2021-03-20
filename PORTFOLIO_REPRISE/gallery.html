@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My portfolio" />
+    <meta name="author" content="Samu Rahkila" />
+    <meta name="keywords" content="coding, programming, HTML, CSS, JavaScript, design, portfolio" />
+    <title>Portfolio | Samu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/60190d36fb.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="faviconasd.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <section class="logo_and_nav">
+            <a href="index.html"><img src="https://public.bc.fi/s2100145/saselogo.png" alt="Logo picture" class="logo"/></a>
+            <nav>
+                <div class="mobile-menu">
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#footer">Contact me</a></li>
+                </ul>
+            </nav>
+            <div class="menu-links">
+                <a href="index.html#work">Work</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="#">Gallery</a>
+                <a href="#footer">Contact me</a>
+            </div>
+        </section>
+        <section class="hero-banner"></section>
+    </header>
+    <main>
+        <section id="gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="grid-item-1 grid-div">
+                        <img src="https://source.unsplash.com/collection/190727/200x100" alt="random pic from unsplash"/>
+                    </div>
+                    <div class="grid-item-2 grid-div">
+                        <h2>This will also be in the grid</h2>
+                    </div>
+                    <div class="grid-item-3 grid-div">
+                        <img src="https://source.unsplash.com/collection/190727/300x100" alt="random pic from unsplash"/>
+                    </div>
+                    <div class="grid-item-4 grid-div">
+                        <img src="https://source.unsplash.com/collection/190727/300x100" alt="random pic from unsplash"/>
+                    </div>
+                    <div class="grid-item-5 grid-div">
+                        <img src="https://source.unsplash.com/collection/190727/300x100" alt="random pic from unsplash"/>
+                    </div>
+                    <div class="grid-item-6 grid-div">
+                        <img src="https://source.unsplash.com/collection/190727/300x100" alt="random pic from unsplash"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button onclick="returnTop()" id="back-to-top" title="Go to top">Back to top</button>
+    </main>
+    <footer id="footer">
+        <h2>Contact me</h2>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" required/>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" required/>
+        </div>
+        <div>
+          <label for="message" id="msglabel">Message</label>
+          <textarea id="message" name="message" rows="4" cols="30" maxlength="1000" placeholder="Type your message here." required></textarea>
+        </div>
+        <input type="submit" id="submit" value="Send">
+      </form>
+      <p>Copyright (C) SR 2021</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

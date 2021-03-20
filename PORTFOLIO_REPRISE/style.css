@@ -308,4 +308,13 @@ input {
   label {
     font-size: 0.9rem;
   }
+
+  #back-to-top {
+    bottom: 10px;
+    right: 6px;
+    z-index: 5000;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
 }
