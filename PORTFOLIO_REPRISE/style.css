@@ -152,7 +152,7 @@ section > p {
 
 #experience {
   background-color: var(--lightblue);
-  min-height: 25vh;
+  min-height: 30vh;
 }
 
 #experience > img {
@@ -213,7 +213,9 @@ section > p {
   box-shadow: 2px 3px 7px rgb(39, 39, 39);
 }
 
-#progress {
+#progress-html,
+#progress-css,
+#progress-js {
   max-width: 100%;
 }
 
