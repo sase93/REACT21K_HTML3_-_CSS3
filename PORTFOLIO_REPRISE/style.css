@@ -131,6 +131,14 @@ section > p {
 
 #experience {
   background-color: var(--lightblue);
+  min-height: 25vh;
+}
+
+#experience > img {
+  float: right;
+  max-width: 20vw;
+  max-height: 20vh;
+  margin-right: var(--sidemargin);
 }
 
 .work-cards {
