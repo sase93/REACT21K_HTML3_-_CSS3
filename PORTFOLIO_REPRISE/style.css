@@ -228,7 +228,14 @@ section > p {
 #progress-html,
 #progress-css,
 #progress-js {
+  appearance: none;
   max-width: 100%;
+}
+
+#progress-html::-webkit-progress-value,
+#progress-css::-webkit-progress-value,
+#progress-js::-webkit-progress-value {
+  background-image: linear-gradient(to right, #8f2502, var(--linkcolor));
 }
 
 .skills-card:nth-child(odd) {
