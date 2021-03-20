@@ -293,6 +293,97 @@ section > p {
   grid-area: i;
 }
 
+/************ Animation ************/
+.animations {
+  display: flex;
+  justify-content: space-between;
+  margin: 10vh 10vw;
+}
+
+.animated-box-1 {
+  background-color: var(--darkblue);
+  height: 170px;
+  width: 170px;
+  animation-name: shrink-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.animated-box-2 {
+  background-color: var(--darkblue);
+  height: 170px;
+  width: 170px;
+  animation-name: shrink-2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.animated-circle {
+  background-color: var(--darkblue);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  animation-name: colorchange;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes colorchange {
+  0% {
+    background-color: var(--darkblue);
+    top: 0;
+  }
+  25% {
+    background-color: red;
+    top: 70px;
+  }
+  50% {
+    background-color: purple;
+    top: -70px;
+  }
+  100% {
+    background-color: var(--darkblue);
+    top: 0;
+  }
+}
+
+@keyframes shrink-1 {
+  0% {
+    height: 115px;
+    width: 115px;
+    background-color: transparent;
+  }
+  50% {
+    height: 170px;
+    width: 170px;
+    background-color: var(--darkblue);
+  }
+  100% {
+    height: 115px;
+    width: 115px;
+    background-color: transparent;
+  }
+}
+
+@keyframes shrink-2 {
+  0% {
+    height: 170px;
+    width: 170px;
+    background-color: var(--darkblue);
+  }
+  50% {
+    height: 115px;
+    width: 115px;
+    background-color: transparent;
+  }
+  100% {
+    height: 170px;
+    width: 170px;
+    background-color: var(--darkblue);
+  }
+}
+
 /************ Footer ************/
 #footer {
   text-align: center;
@@ -392,5 +483,89 @@ input {
     padding: 10px;
     border-radius: 10px;
     font-size: 14px;
+  }
+
+  .animated-box-1 {
+    background-color: var(--darkblue);
+    height: 60px;
+    width: 60px;
+    animation-name: shrink-1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  .animated-box-2 {
+    background-color: var(--darkblue);
+    height: 60px;
+    width: 60px;
+    animation-name: shrink-2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  .animated-circle {
+    background-color: var(--darkblue);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    animation-name: colorchange;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    position: relative;
+  }
+
+  @keyframes colorchange {
+    0% {
+      background-color: var(--darkblue);
+      top: 0;
+    }
+    25% {
+      background-color: red;
+      top: 40px;
+    }
+    50% {
+      background-color: purple;
+      top: -40px;
+    }
+    100% {
+      background-color: var(--darkblue);
+      top: 0;
+    }
+  }
+
+  @keyframes shrink-1 {
+    0% {
+      height: 45px;
+      width: 45px;
+      background-color: transparent;
+    }
+    50% {
+      height: 60px;
+      width: 60px;
+      background-color: var(--darkblue);
+    }
+    100% {
+      height: 45px;
+      width: 45px;
+      background-color: transparent;
+    }
+  }
+
+  @keyframes shrink-2 {
+    0% {
+      height: 60px;
+      width: 60px;
+      background-color: var(--darkblue);
+    }
+    50% {
+      height: 45px;
+      width: 45px;
+      background-color: transparent;
+    }
+    100% {
+      height: 60px;
+      width: 60px;
+      background-color: var(--darkblue);
+    }
   }
 }
