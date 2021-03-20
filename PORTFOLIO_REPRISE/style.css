@@ -93,6 +93,12 @@ li {
   margin: 0 var(--sidemargin);
   list-style-type: none;
   font-size: 1.3rem;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: var(--lightblue);
 }
 
 /************ Main ************/
@@ -137,6 +143,7 @@ main > section > h2 {
   padding: 15px;
   border-radius: 10px;
   font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 #back-to-top:hover {
@@ -320,6 +327,7 @@ input {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #submit:hover {
