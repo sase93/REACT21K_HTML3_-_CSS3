@@ -96,12 +96,17 @@ li {
 }
 
 /************ Main ************/
+main > section > h2 {
+  text-shadow: 2px 2px 4px var(--darkblue);
+}
+
 .hero-banner {
   width: 100%;
   min-height: 85vh;
   background: url(https://source.unsplash.com/FIKD9t5_5zQ/1600x900) no-repeat
     fixed center center/cover;
   z-index: -1;
+  text-shadow: 4px 1px 3px var(--lightblue);
 }
 
 .hero-banner::before {
@@ -290,6 +295,10 @@ section > p {
 #footer > h2,
 #footer > p {
   padding: var(--verticalmargin) 0;
+}
+
+#footer > h2 {
+  text-shadow: 2px 2px 4px var(--darkblue);
 }
 
 input,
