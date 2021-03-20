@@ -15,12 +15,11 @@ const scrollHeader = () => {
 
 window.addEventListener("scroll", scrollHeader);
 
-function toggleMenu() {
-    var x = document.querySelector('.menu-links');
-    if (x.style.display === "initial") {
-      x.style.display = "none";
+function toggleMenu() { // Displays/hides mobile menu links
+    if (mobileLinks.style.display === "initial") {
+      mobileLinks.style.display = "none";
     } else {
-      x.style.display = "initial";
+      mobileLinks.style.display = "initial";
     }
 }
 

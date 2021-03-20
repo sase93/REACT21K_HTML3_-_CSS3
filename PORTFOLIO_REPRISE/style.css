@@ -35,13 +35,9 @@ a:hover {
   color: var(--linkhovercolor);
 }
 
-h1 {
-  font-size: 36px;
-}
-
 /************ Header ************/
 .mobile-menu {
-  display: none;
+  display: none; /* Mobile menu button hidden */
 }
 
 .mobile-menu a.icon {
@@ -56,12 +52,13 @@ h1 {
 }
 
 .menu-links {
-  display: none;
+  display: none; /* Links in mobile menu hidden */
   width: 100%;
   padding: 10px 0 1px;
   background-color: transparent;
   position: absolute;
   top: 6.2vh;
+  transition: background-color 0.2s ease;
 }
 
 .menu-links > a {
@@ -76,6 +73,7 @@ h1 {
   top: 0;
   width: 100%;
   z-index: 100;
+  transition: background-color 0.2s ease;
 }
 
 .logo {
@@ -102,8 +100,8 @@ li:hover {
 }
 
 /************ Main ************/
-main > section > h2 {
-  text-shadow: 2px 2px 4px var(--darkblue);
+h1 {
+  font-size: 36px; /* h1 used in hero-banner */
 }
 
 .hero-banner {
@@ -151,6 +149,10 @@ main > section > h2 {
   color: var(--linkcolor);
 }
 
+main > section > h2 {
+  text-shadow: 2px 2px 4px var(--darkblue);
+}
+
 section > h2,
 section > p {
   margin: 0 var(--sidemargin);
@@ -196,7 +198,9 @@ section > p {
 }
 
 .work-card:nth-child(even) {
-  background-color: var(--lightblue);
+  background-color: var(
+    --lightblue
+  ); /* Middle card swapped colors compared to surrounding ones */
   color: var(--darkblue);
 }
 
@@ -225,10 +229,17 @@ section > p {
   box-shadow: 2px 3px 7px rgb(39, 39, 39);
 }
 
+.skills-card:nth-child(odd) {
+  background-color: var(
+    --lightblue
+  ); /* HTML & JS cards swapped colors compared to CSS card */
+  color: var(--darkblue);
+}
+
 #progress-html,
 #progress-css,
 #progress-js {
-  appearance: none;
+  appearance: none; /* To allow styling of progress bars */
   max-width: 100%;
 }
 
@@ -236,11 +247,6 @@ section > p {
 #progress-css::-webkit-progress-value,
 #progress-js::-webkit-progress-value {
   background-image: linear-gradient(to right, #8f2502, var(--linkcolor));
-}
-
-.skills-card:nth-child(odd) {
-  background-color: var(--lightblue);
-  color: var(--darkblue);
 }
 
 /************ Gallery ************/
@@ -435,17 +441,19 @@ input {
 
 /************ Other devices' settings ************/
 @media only screen and (max-width: 600px) {
-  .logo {
-    max-height: 12vh;
-    max-width: 12vw;
-  }
-
   ul {
-    display: none;
+    display: none; /* Hide normal nav menu */
   }
 
   .mobile-menu {
-    display: initial;
+    display: initial; /* Make mobile menu icon visible */
+  }
+
+  /* The rest (below) adjust sizing and some positions */
+
+  .logo {
+    max-height: 12vh;
+    max-width: 12vw;
   }
 
   h1 {
@@ -460,23 +468,19 @@ input {
     font-size: 10px;
   }
 
-  .card {
-    width: 28%;
-    max-height: 50vh;
-    margin: 4vw;
-    padding: 1rem;
-  }
-
-  .card > p {
-    font-size: 10px;
-  }
-
   a {
     font-size: 12px;
   }
 
   p {
     font-size: 12px;
+  }
+
+  .work-card {
+    width: 28%;
+    max-height: 50vh;
+    margin: 4vw;
+    padding: 1rem;
   }
 
   label {
