@@ -222,6 +222,63 @@ section > p {
   color: var(--darkblue);
 }
 
+/************ Gallery ************/
+.gallery-grid > div > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "a a b b b c"
+    "a a d d d c"
+    "e h h h h c"
+    "f h h h h i"
+    "g h h h h i ";
+  grid-gap: 0.5rem;
+  max-width: 500px;
+  margin: var(--verticalmargin) var(--sidemargin);
+}
+
+.grid-item-1 {
+  grid-area: h;
+}
+
+.grid-item-2 {
+  grid-area: b;
+}
+
+.grid-item-3 {
+  grid-area: c;
+}
+
+.grid-item-4 {
+  grid-area: d;
+}
+
+.grid-item-5 {
+  grid-area: e;
+}
+
+.grid-item-6 {
+  grid-area: f;
+}
+
+.grid-item-7 {
+  grid-area: g;
+}
+
+.grid-item-8 {
+  grid-area: a;
+}
+
+.grid-item-9 {
+  grid-area: i;
+}
+
 /************ Footer ************/
 #footer {
   text-align: center;
